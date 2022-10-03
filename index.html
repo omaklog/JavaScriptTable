@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<head>
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+<div class="container-main">
+    <div class="labels">
+        <div id="generate-elements">
+            <label>Dimensi&oacute;n nxn para la tabla:</label>
+            <input id="dimension" type="number" inputmode="numeric" pattern="\d*" value="1" min="1" max="99">
+
+            <button class="btn" onclick="generateTable()">Generar tabla</button>
+        </div>
+
+
+        <br>
+        <div class="navButtons">
+            <button id="btn-horizontal" class="btn" onclick="getHorizontal()">Hotizontal</button>
+            <button id="btn-vertical" class="btn" onclick="getVertical()">Vertical</button>
+            <button id="btn-espiral" class="btn" onclick="getEspiral()">Espiral</button>
+        </div>
+        <label id="rowSum">Suma de fila:</label>
+        <br>
+        <label id="colSum">Suma columna:</label>
+        <br>
+        <label id="totalSum">Suma total:</label>
+        <br>
+    </div>
+
+    <div class="tabla" id="tabla">
+    </div>
+    <div id="btn-reset">
+        <button class="btn">Reiniciar</button>
+    </div>
+</div>
+
+
+</body>
+<script src="assets/js/main.js"></script>
+
+</html>
